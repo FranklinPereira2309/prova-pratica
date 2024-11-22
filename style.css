@@ -39,10 +39,16 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     cursor: pointer;
-    padding: 10px;
 }
 
-.content-ul li:hover {
+.content-ul a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    
+}
+
+.content-ul li a:hover {
     background-color: #fff;
     color: #000;
 }
