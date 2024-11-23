@@ -1,5 +1,24 @@
+<?php
+if(isset($_POST['submit'])){
+    include_once 'config.php';
+
+    $descricao=$_POST['text-area-descricao'];
+    $setor = $_POST['input-setor'];
+    $usuario_id = $_POST['id'];
+    $prioridade = $_POST['select-prioridade'];
+    $status = $_POST['afazer'];
+
+    
+
+    $result = mysqli_query ($conexao,"INSERT INTO usuarios (descricao,setor,usuario_id, prioridade, status)
+    VALUES ('$descricao','$setor','$usuario_id','$status')");
+}
+
+?>
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="py-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,23 +37,25 @@
     <div>
 
     </div>
-    
-    <div class="container-cadastro">
-        <h1>Cadastro de Tarefas</h1>
-        <label for="textarea-descricao">Descrição</label>
-        <textarea name="textarea-descricao" cols="30" rows="10"></textarea>
-        <label for="input-setor">Setor</label>
-        <input type="text" name="input-setor" placeholder="Digite um setor" >
-        <label for="select-usuario">Usuário</label>
-        <select name="select-usuario" >
-            <option value=""></option>
-        </select>
-        <label for="select-prioridade">Prioridade</label>
-        <select name="select-usuario" >
-            <option value=""></option>
-        </select>
-        <input type="submit" value="Cadastrar">
-    </div>
+    <form action="cadastroTarefas.php" method="post">
+        <div class="container-cadastro">
+            <h1>Cadastro de Tarefas</h1>
+            <label for="textarea-descricao">Descrição</label>
+            <textarea name="textarea-descricao" id="text-area-descricao" cols="30" rows="10"></textarea>
+            <label for="input-setor">Setor</label>
+            <input type="text" name="input-setor" id="input-setor" placeholder="Digite um setor" >
+            <label for="select-usuario">Usuário</label>
+            <select name="select-usuario" id="select-usuario" >
+                <option hidden value="">Selecione um Usuário</option>
+            </select>
+            <label for="select-prioridade">Prioridade</label>
+            <select name="select-prioridade" id="select-prioridade">
+                <option hidden value="">Selecione uma Prioridade</option>
+            </select>
+            <input type="hidden" name="idTarefa" value="<?php echo $id?>">
+            <input type="submit" value="Cadastrar">
+        </div>
+    </form>
     
 </body>
 </html>
