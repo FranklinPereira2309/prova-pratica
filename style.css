@@ -9,6 +9,10 @@ body {
     font-size: 1.1em;
 }
 
+h1 {
+    padding: 10px 0 10px 10px;
+}
+
 .container-nav {
     background-color: #0056b3;
     color: white;
@@ -91,3 +95,78 @@ input[type='submit']:hover {
     background-color: #2786eb;
     cursor: pointer;
 }
+
+.minhas-tarefas {
+    padding: 30px;
+}
+
+.container-tarefas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 8px;  
+}
+
+.container-tarefas h2 {
+    padding: 20px 0 20px 0;
+}
+
+.aFazer, .fazendo, .finalizado {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin-right: 20px;
+    background-color: lightgray;
+    
+}
+
+.aFazer .fazendo .finalizado h2, h3 {
+    padding-bottom: 10px;
+    
+}
+
+.content-tarefa {
+    width: 90%;
+    margin-bottom: 10px;
+    /* margin-right: 20px;
+    margin-left: 20px;   
+     */
+
+}
+
+.tarefa {
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    
+}
+button {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4697ed;
+}
+
+.conteudo {
+    padding: 10px;
+}
+
