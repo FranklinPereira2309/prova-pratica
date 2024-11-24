@@ -12,9 +12,9 @@
     <div class="container-nav">
         <h1><a>Gerenciamento de tarefas</a></h1>
         <ul class="content-ul">
-            <li><a href="cadastroUsuarios.html">Cadastro de Usuário</a></li>
-            <li><a href="cadastroTarefas.html">Cadastro de Tarefas</a></li>
-            <li><a href="gerenciarTarefas.html">Gerenciamento de tarefas</a></li>
+            <li><a href="cadastroUsuarios.php">Cadastro de Usuário</a></li>
+            <li><a href="cadastroTarefas.php">Cadastro de Tarefas</a></li>
+            <li><a href="gerenciarTarefas.php">Gerenciamento de tarefas</a></li>
         </ul>
     </div>
     <div>
