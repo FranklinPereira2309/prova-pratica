@@ -80,7 +80,8 @@ input {
 
 }
 
-.select-status {
+#select-status {
+    padding-left: 10px;
     margin-left: 10px;
 }
 

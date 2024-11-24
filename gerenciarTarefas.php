@@ -45,7 +45,7 @@ foreach ($sqls as $status => $query) {
 
     <h1>Tarefas</h1>
     <div class="minhas-tarefas">
-        <!-- Exibindo as tarefas de cada status -->
+        
         <?php foreach ($tarefas as $status => $lista): ?>
             <div class="container-tarefas">
                 <div class="<?php echo str_replace(' ', '', $status); ?>">
